@@ -1,5 +1,8 @@
 name: First Workflow
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  push:
+    branches: [Master]
 jobs:
   first-job:
     runs-on: Ubuntu 24.04
